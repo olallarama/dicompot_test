@@ -374,6 +374,7 @@ type CMoveCallback func(
 
 // ConnectionState informs session state to callbacks.
 type ConnectionState struct {
+	TLS tls.ConnectionState
 }
 
 // CEchoCallback implements C-ECHO callback.
