@@ -342,6 +342,8 @@ type ServiceProviderParams struct {
 
 	// If CStoreCallback=nil, a C-STORE call will produce an error response.
 	CStore CStoreCallback
+	
+	TLSConfig *tls.Config
 }
 
 // DefaultMaxPDUSize is the the PDU size advertized.
